@@ -85,7 +85,7 @@ This choice is all about keeping things simple and manageable. With a smaller pr
 
 That said, if the project grows, a more **granular component breakdown** could be beneficial. This approach would involve breaking components down into smaller, more focused pieces. It’s great for reusability and maintainability, especially in a larger codebase. Smaller components are easier to test and reason about. However, the trade-off here is complexity—it’s easy to end up with "component hell," where there are too many tiny components, making the app structure harder to navigate and understand at a glance. For now, the flat structure keeps things straightforward, but I'd be ready to refactor into more granular components if and when the need arises.
 
-## Routing Choice: React Router
+### Routing Choice: React Router
 
 I went with React Router for our routing needs. 
 I also considered Next.js but React Router is straightforward and does exactly what we need right now.  
