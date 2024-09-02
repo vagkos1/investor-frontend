@@ -85,17 +85,12 @@ This choice is all about keeping things simple and manageable. With a smaller pr
 
 That said, if the project grows, a more **granular component breakdown** could be beneficial. This approach would involve breaking components down into smaller, more focused pieces. It’s great for reusability and maintainability, especially in a larger codebase. Smaller components are easier to test and reason about. However, the trade-off here is complexity—it’s easy to end up with "component hell," where there are too many tiny components, making the app structure harder to navigate and understand at a glance. For now, the flat structure keeps things straightforward, but I'd be ready to refactor into more granular components if and when the need arises.
 
-### Routing: Sticking with React Router for Simplicity
+## Routing Choice: React Router
 
-For routing, I've chosen to use **React Router**. It’s the go-to choice for most React applications when it comes to client-side routing. React Router is well-documented, widely used, and integrates seamlessly with the rest of the React ecosystem. It's flexible and easy to implement, making it a solid choice for this project’s needs. Given the simplicity of our routes and the fact that everything is happening on the client side, React Router is more than enough to handle our requirements.
-
-However, there are alternatives worth considering, especially if the project were to scale or have different requirements:
-
-- **Reach Router**: Reach Router is another client-side routing solution that focuses on accessibility. It’s lighter and simpler than React Router but doesn’t have as many features. If accessibility were a more significant concern, I might consider Reach Router. But for now, React Router covers our bases well.
-
-- **Next.js**: If I were thinking about server-side rendering (SSR) or even static site generation (SSG), **Next.js** would be a top contender. It offers built-in routing, SSR, and a bunch of optimizations right out of the box, which can drastically improve SEO and initial load performance. However, switching to Next.js would introduce more complexity—there's a bit of a learning curve, and we’d need to rethink our app structure and deployment process to accommodate SSR or SSG.
-
-**Trade-off**: For this project, sticking with React Router is a no-brainer—it’s easy to use, fits our current needs perfectly, and keeps the setup simple. If SEO and initial load performance become more critical, or if the project scales to a point where server-side rendering could offer substantial benefits, then I'd consider making the switch to something like Next.js. But for now, React Router provides the right balance between simplicity and functionality.
+I went with React Router for our routing needs. 
+I also considered Next.js but React Router is straightforward and does exactly what we need right now.  
+Next.js is cool, but it's got a bunch of bells and whistles we don't really need at the moment.  
+If we need servier-side rendering we can always revisit this decision.
 
 ## Future Improvements
 
