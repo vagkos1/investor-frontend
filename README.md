@@ -1,4 +1,4 @@
-# preqin-frontend
+# frontend
 
 This project is a React-based frontend for the Preqin investor dashboard. It provides a user interface for viewing and interacting with investor data and their commitments.
 
